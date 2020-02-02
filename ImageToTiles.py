@@ -2,7 +2,18 @@
 """
 @author: archit
 """
-
+"""
+    ----------------------------------Author's Note---------------------------------------
+    
+    Image to Tiles is a advanced numpy resource which presents an example of how numpy functions 
+    can help reduce writing unnecessary loops in python. The code contains use of numpy attributes like
+    shape and strides. It also uses numpy functions like np.ravel and np.lib.stride_tricks.as_strided
+    
+    divmod is a python function which returns the quotient and remainder for divident and divisor as inputs.
+    Usage of magic functions like %timeit can be used to compare the optimized and the unoptimized code.
+    
+    ---------------------------------------------------------------------------------------
+"""
 # Importing the necessary libraries
 import numpy as np
 import cv2 # Used for testing with an image
