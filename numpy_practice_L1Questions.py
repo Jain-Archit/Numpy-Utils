@@ -55,24 +55,23 @@ def A6():
     output_ = np.reshape(input_,(2,-1))
     print(output_)
     
-Q7 = ""
-def A7():
-    
-Q7 = ""
-def A7():
-    
-Q7 = ""
-def A7():
-    
-Q7 = ""
-def A7():
-    
-Q7 = ""
-def A7():
-    
-Q7 = ""
-def A7():
-    
-Q7 = ""
-def A7():
-    
+Q7 = """ Print or show only 3 decimal places of the numpy array rand_arr.
+      """
+def A15():
+    rand_arr = np.random.random([5,3])
+    print(rand_arr)
+    np.set_printoptions(precision=3)
+    print(rand_arr)
+        
+Q8 = """ Pretty print rand_arr by suppressing the scientific notation (like 1e10)    
+     """
+def A8():
+    np.random.seed(100)
+    rand_arr = np.random.random([3,3])/1e3
+    np.set_printoptions(suppress = False,precision = 6)
+    print(rand_arr)
+    np.set_printoptions(suppress = True,precision = 6)
+    print(rand_arr)
+
+Q9 = """
+     """

@@ -125,5 +125,49 @@ def A9():
         np.vectorize : 
     """
 
-Q10 = 
+Q10 = """ Swap columns 1 and 2 in the array arr.
+      """
+def A10():
+    arr = np.arange(9).reshape(3,3)
+    print(arr)
+    arr = arr[:, [1,0,2]]
+    print(arr)
+    """
+        Note: np.transpose or np.swapaxes would not work in this scenario as 
+        we do not want to change axis, but only reviewing the array
+    """
+    
+Q11 = """ Swap rows 1 and 2 in the array arr:
+      """
+def A11():
+    arr = np.arange(9).reshape(3,3)
+    print(arr)
+    arr = arr[[1,0,2],:]
+    print(arr)
+    """
+        Note Trying to find the generalized working code for the same
+    """
+    
+Q12 = """ Reverse the rows of a 2D array arr.
+      """
+def A12():
+    arr = np.arange(9).reshape(3,3)
+    print(arr)
+    arr = arr[:,::-1]
+    print(arr)    
 
+Q13 = """ Reverse the columns of a 2D array arr.
+      """
+def A13():
+    arr = np.arange(9).reshape(3,3)
+    print(arr)
+    arr = arr[::-1,:]
+    print(arr)
+    print(arr.strides)
+
+Q14 = """ Create a 2D array of shape 5x3 to contain random decimal numbers between 5 and 10.
+      """      
+def A14():
+    rand_arr = np.random.uniform(5,10, size=(5,3))
+    print(rand_arr)
+    
